@@ -70,6 +70,9 @@ const styles = theme => ({
 
     noUnderLine: {
         textDecoration: 'none',
+    },
+    paperImage: {
+        maxWidth: '100%',
     }
 
 });
@@ -131,7 +134,7 @@ function Layout(props) {
                     <Grid container spacing={40}>
                         <Grid item  sm={6} md={4} lg={4}>
                             <Paper className={classes.card} elevation={2}>
-                                <img src="images/txn_gql.gif"/>
+                                <img src="images/txn_gql.gif" className={classes.paperImage}/>
                                 <Typography variant="subheading" gutterBottom align='center'>
                                     <b> In Browser Editor </b>
                                 </Typography>
@@ -168,7 +171,7 @@ function Layout(props) {
                         <Grid item  sm={6} md={4} lg={4}>
                             <a href="https://satran004.github.io/aion-graphql-docs/" className={classes.noUnderLine}>
                             <Paper className={classes.card} elevation={2}>
-                                <img src="images/schema_doc.png" height="300"/>
+                                <img src="images/schema_doc.png" height="300" className={classes.paperImage}/>
                                 <Typography variant="subheading" gutterBottom align='center'>
                                     <b> Schema Document</b>
                                 </Typography>
