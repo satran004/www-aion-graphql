@@ -73,7 +73,13 @@ const styles = theme => ({
     },
     paperImage: {
         maxWidth: '100%',
+    },
+    grid: {
+        [theme.breakpoints.down('xs')]: {
+            minWidth: '100%',
+        }
     }
+
 
 });
 
@@ -132,7 +138,7 @@ function Layout(props) {
                 <div className={classNames(classes.layout, classes.cardGrid)}>
 
                     <Grid container spacing={40}>
-                        <Grid item  sm={6} md={4} lg={4}>
+                        <Grid item  sm={6} md={4} lg={4} className={classes.grid}>
                             <Paper className={classes.card} elevation={2}>
                                 <img src="images/txn_gql.gif" className={classes.paperImage}/>
                                 <Typography variant="subheading" gutterBottom align='center'>
@@ -140,7 +146,7 @@ function Layout(props) {
                                 </Typography>
                             </Paper>
                         </Grid>
-                        <Grid item sm={6} md={4} lg={4}>
+                        <Grid item sm={6} md={4} lg={4} className={classes.grid}>
                             <Paper className={classes.card} elevation={2}>
                                 <Typography variant="title" color="textSecondary" paragraph align='center'>
 
@@ -168,7 +174,7 @@ function Layout(props) {
 
                             </Paper>
                         </Grid>
-                        <Grid item  sm={6} md={4} lg={4}>
+                        <Grid item  sm={6} md={4} lg={4} className={classes.grid}>
                             <a href="https://satran004.github.io/aion-graphql-docs/" className={classes.noUnderLine}>
                             <Paper className={classes.card} elevation={2}>
                                 <img src="images/schema_doc.png" height="300" className={classes.paperImage}/>
@@ -186,7 +192,7 @@ function Layout(props) {
                             <b> Want to try AION GraphQL in your Application ? </b>
                         </Typography>
                         <Typography variant="subheading" align="center" color="textSecondary" paragraph>
-                            Try this GraphQL API endpoint maintained by the community (Only for testing)
+                            Try this GraphQL API endpoint (Only For Testing)
                             <br/>
                             <Typography variant="caption" align="center" color="textSecondary" paragraph>
                                 <b> https://api.aion-graphql.com/graphql</b>
