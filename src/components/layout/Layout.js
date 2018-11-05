@@ -223,7 +223,7 @@ function Layout(props) {
                             <Typography color="textSecondary">
                             <div className={classes.donation}>
                             <aion-pay id="donate" to="a024fb762af2e167a62740ce97e617ce6e3b58194ce554e9bec854bdfd5075bb"
-                                      gql-url="https://n1.aion-graphql.com/graphql" button-text="Donate"></aion-pay>
+                                      gql-url="https://api.aion-graphql.com/graphql" button-text="Donate"></aion-pay>
                             </div>
                             <i className={classes.powered_by}>(Powered by Aion GraphQL)</i>
                             </Typography>
