@@ -218,7 +218,7 @@ function Layout(props) {
 
                         <Typography variant="subheading" align="center" color="primary" paragraph>
                             <br/>
-                            <b>Become a sponsor. You can donate by AION.</b>
+                            <b>Like to support this project? You can donate by AION</b>
                             <br/><br/>
                             <Typography color="textSecondary">
                             <div className={classes.donation}>
