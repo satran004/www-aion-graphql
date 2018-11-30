@@ -81,11 +81,12 @@ const styles = theme => ({
     },
     donation: {
         display: 'flex',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        textAlign: 'left'
     },
     powered_by: {
         fontSize: "small"
-    }
+    },
 
 });
 
@@ -118,7 +119,7 @@ function Layout(props) {
                             <img src="images/aion-logo.png" height="100" width="300"/>
                         </Typography>
                         <Typography variant="subheading" align="center" color="textSecondary" paragraph>
-                            It provides a GraphQL API endpoint to interact with AION Blockchain.
+                            It provides both GraphQL and REST API endpoints to interact with Aion Blockchain
                         </Typography>
                         <div className={classes.heroButtons}>
                             <Grid container spacing={16} justify="center">
@@ -136,7 +137,13 @@ function Layout(props) {
                                 <Grid item>
                                     <Button variant="outlined" color="primary"
                                             href="https://api.aion-graphql.com/playground.html">
-                                        Try In Browser
+                                        Try GraphQL API
+                                    </Button>
+                                </Grid>
+                                <Grid item>
+                                    <Button variant="outlined" color="primary"
+                                            href="https://api.aion-graphql.com/swagger-ui.html">
+                                        Try REST API
                                     </Button>
                                 </Grid>
                             </Grid>
@@ -222,8 +229,8 @@ function Layout(props) {
                             <br/><br/>
                             <Typography color="textSecondary">
                             <div className={classes.donation}>
-                            <aion-pay id="donate" to="a024fb762af2e167a62740ce97e617ce6e3b58194ce554e9bec854bdfd5075bb"
-                                      gql-url="https://api.aion-graphql.com/graphql" button-text="Donate"></aion-pay>
+                            <aion-pay id="donate2" to="a024fb762af2e167a62740ce97e617ce6e3b58194ce554e9bec854bdfd5075bb"
+                                      gql-url="https://api.aion-graphql.com/graphql" button-text="Aion Pay"></aion-pay>
                             </div>
                             <i className={classes.powered_by}>(Powered by Aion GraphQL)</i>
                             </Typography>
